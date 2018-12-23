@@ -13,15 +13,10 @@ const burger = (props) => {
                                     return curr.concat(elem);
                                 },[]);
 
-    console.log(transformedIngridient);
-
-
     if(transformedIngridient.length===0){
         transformedIngridient = <p>Please start adding ingridients!</p>;
     }
     
-    // console.log(typeof(isEmptyIngridient));
-
     return (
         <div className={classes.Burger}>
             <BurgerIngridient type="bread-top"/>
